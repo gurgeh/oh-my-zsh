@@ -2,47 +2,16 @@ A handful of functions, auto-complete helpers, and stuff that makes you shout...
 
 bq. "OH MY ZSHELL!"
 
-This is a minimally modified version, made to install as a Ubuntu PPA and with
+This is a minimally modified version, with
 my (Gurgeh's) prefered settings and mercurial additions.
 
-h2. Setup
-
-@oh-my-zsh@ should work with any recent release of "zsh":http://www.zsh.org/, the minimum recommended version is 4.3.9.
-
-h3. The automatic installer... (do you trust me?)
-
-You can install this via the command line with either `curl` or `wget`.
-
-h4. via `curl`
-
-@curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh@
-
-h4. via `wget`
-
+Install like this:
+@sudo apt-get install zsh autojump
 @wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh@
-
-h3. The manual way
-
-
-1. Clone the repository
-
-  @git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh@
-
-2. Create a new zsh config by copying the zsh template we've provided.
-
-  *NOTE*: If you already have a ~/.zshrc file, you should back it up. @cp ~/.zshrc ~/.zshrc.orig@ in case you want to go back to your original settings.
-
-  @cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc@
-
-3. Set zsh as your default shell:
-
-  @chsh -s /bin/zsh@
-
-4. Start / restart zsh (open a new terminal is easy enough...)
 
 h3. Problems?
 
-You _might_ need to modify your PATH in ~/.zshrc if you're not able to find some commands after switching to _Oh My Zsh_.
+You _might_ need to modify your PATH (or other shell variables) in ~/.zshrc if you're not able to find some commands after switching to _Oh My Zsh_.
 
 h2. Usage
 
